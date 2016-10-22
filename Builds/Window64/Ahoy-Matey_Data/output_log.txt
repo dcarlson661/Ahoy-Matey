@@ -16,7 +16,7 @@ Platform assembly: C:\Users\David Carlson\Documents\repos\ahoymatey\Ahoy-Matey\B
 Loading C:\Users\David Carlson\Documents\repos\ahoymatey\Ahoy-Matey\Builds\Window64\Ahoy-Matey_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\David Carlson\Documents\repos\ahoymatey\Ahoy-Matey\Builds\Window64\Ahoy-Matey_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\David Carlson\Documents\repos\ahoymatey\Ahoy-Matey\Builds\Window64\Ahoy-Matey_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.051 seconds
+- Completed reload, in  0.045 seconds
 Platform assembly: C:\Users\David Carlson\Documents\repos\ahoymatey\Ahoy-Matey\Builds\Window64\Ahoy-Matey_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\David Carlson\Documents\repos\ahoymatey\Ahoy-Matey\Builds\Window64\Ahoy-Matey_Data\Managed\System.dll (this message is harmless)
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
@@ -24,11 +24,11 @@ desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.102317 ms
+UnloadTime: 0.767311 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 17a8 -> priority: 1 
-  Thread -> id: 1e50 -> priority: 1 
-MyNetworkManager.OnStartClient at 3.712698
+  Thread -> id: 13a4 -> priority: 1 
+  Thread -> id: 1f60 -> priority: 1 
+MyNetworkManager.OnStartClient at 8.255706
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
@@ -36,7 +36,7 @@ MyNetworkManager.OnStartClient at 3.712698
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-MyNetworkManager.OnClientConnect at 3.74584 address=192.168.0.5
+MyNetworkManager.OnClientConnect at 8.280741 address=192.168.0.5
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 

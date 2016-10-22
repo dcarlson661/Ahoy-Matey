@@ -11,6 +11,14 @@ public class Player : NetworkBehaviour {
 	void Start () {
 	
 	}
+
+    public override void OnStartLocalPlayer()
+    {
+        //Ok so in ue the camera of the prefab is disabled (unchecked)
+        //and here each local player's camera is enabled
+        // so we only have one camera on each machine
+        GetComponentInChildren<Camera>().enabled = true;
+    }
 	
 	// Update is called once per frame
 	void Update () {
