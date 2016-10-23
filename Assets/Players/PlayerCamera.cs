@@ -18,7 +18,11 @@ public class PlayerCamera : MonoBehaviour {
         yaw += speedH * Input.GetAxis("Mouse X");
         pitch -= speedV * Input.GetAxis("Mouse Y");
 
-        transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
+        Vector3 mousePosition = new Vector3(pitch, yaw, 0.0f);
+
+        transform.eulerAngles = mousePosition;// new Vector3(pitch, yaw, 0.0f);
+        //http://stackoverflow.com/questions/28397558/rotate-camera-based-on-mouse-postitions-around-a-object-unity3d
+        //transform.parent.transform.Rotate(mousePosition);
 
     }
 }
