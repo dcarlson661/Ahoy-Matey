@@ -6,10 +6,14 @@ using System.Collections;
 public class Player : NetworkBehaviour {
 
     private Vector3 inputValue;
+    private Camera camera;
 
 	// Use this for initialization
 	void Start () {
-	
+        //camera = (Camera)GetComponentsInChildren<Camera>();
+
+       // camera=Getca
+        Debug.Log("Player Start " + camera);
 	}
 
     public override void OnStartLocalPlayer()
@@ -32,5 +36,7 @@ public class Player : NetworkBehaviour {
         inputValue.z = CrossPlatformInputManager.GetAxis("Vertical");
 
         transform.Translate(inputValue);
+
+        
     }
 }
