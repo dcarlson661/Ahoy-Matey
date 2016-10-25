@@ -6,14 +6,16 @@ using System.Collections;
 public class Player : NetworkBehaviour {
 
     private Vector3 inputValue;
-    private Camera camera;
 
-	// Use this for initialization
-	void Start () {
-        //camera = (Camera)GetComponentsInChildren<Camera>();
+    public float speedH = 2.0f;
+    public float speedV = 2.0f;
+    private float yaw = 0.0f;
+    private float pitch = 0.0f;
 
-       // camera=Getca
-        Debug.Log("Player Start " + camera);
+    // Use this for initialization
+    void Start () {
+
+        Debug.Log("Player Start ");
 	}
 
     public override void OnStartLocalPlayer()
@@ -37,6 +39,14 @@ public class Player : NetworkBehaviour {
 
         transform.Translate(inputValue);
 
-        
+       
+
+        yaw   += speedH * Input.GetAxis("Mouse X");
+        pitch -= speedV * Input.GetAxis("Mouse Y");
+
+        Vector3 mousePosition = new Vector3(/*pitch*/0.0f, yaw, 0.0f);
+        transform.eulerAngles = mousePosition;// new Vector3(pitch, yaw, 0.0f);
+
+
     }
 }
